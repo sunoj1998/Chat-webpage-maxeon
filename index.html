@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -81,23 +83,53 @@
       
     </section>
     <section class="chat-section">
-      <div class="chat-icon">
-        <span class="bubble d-flex  align-items-center justify-content-center" >
-          
-          <label for="click">
-             <img class="sparrow-bird "  src="./asset/Sparrow Bird.png" alt="">
-             <!-- <i class="fas fa-times"></i> -->
-          </label>
-         
-        </span>
+      <div class="first-chat-box" id="first-chat-box-id">
+        <div class="chat-heading" id="">
+          <p class="para-one">Hi There</p>
+          <p class="para-two">hello ask us anything.share your <br> feedback.</p>
+        </div>
+        <div class="chat-middle" id="chat-middle-id">
+          <p class="para-one ">Start a Conversation</p>
+          <p class="para-two">The team typically replies in a few minutes.</p>
+          <button class="green-button" onclick="hitButton()">New Conversation <span class="send-icon"><i class="material-icons">send</i></span></button>
+        </div>
+        
+      </div>
 
+      <div class="second-chat-box" id="second-chat-box-id">
+        <div class="chat-heading" id="">
+          <p class="para-one">Hi There</p>
+          <p class="para-two">The team typically replies in a few minutes.</p>
+        </div>
+        <div class="user-chat right"> 
+          <p>Is there any offline versions<br>available for Maxeon Player?</p>
+        </div>
+        
+        <span class="round-shape"></span>
+        <div class="server-chat left"> 
+          </span><p>Currently we don't have <br>but we will launch soon.</p>
+        </div>
+
+        <div class="logo-section">
+          <span class="sparrow-favicon text-center">
+             <p><img src="./asset/sparrow favicon.png" alt="" style="width: 20px;">we run on surveysparrow</p> </span>
+        </div>
+        <hr>
+        <div class="input-field">
+          <input  type="text" placeholder="Write a reply...">
+          <a  id="blue-button"><i class="material-icons">send</i></a>
       </div>
-      <div class="chat-box">
-            
-      </div>
+      
+      
 
     </section>
+    <span class="sparrow-icon-span" onclick="displayChatBox()" id="sparrow-icon-id">
+      <img src="./asset/Sparrow Bird.png" class="sparrow-img"   alt="">
+    </span>
     
+    <span class="cross-icon-span" onclick="closeChatBox()" id="cross-icon-id">
+      <i class="material-icons" >close</i></span>
+    </span>
       
 
        
@@ -128,5 +160,7 @@
     ></script>
 
     <script src="https://kit.fontawesome.com/2807c7ca39.js" crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
   </body>
 </html>

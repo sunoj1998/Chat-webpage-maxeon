@@ -47,52 +47,232 @@
 }
 
 
-/* chat section */
-.chat-icon{
-  position: fixed;
-  right: 60px;
-  bottom: 15px;
-}
-.chat-box{
-    /* display: none; */
+
+/* first chat section */
+
+.first-chat-box{
+    display: none;
     position: fixed;
     right: 62px;
     bottom: 100px;
-    width: 300px;
-    height: 35vh;
+    width: 320px;
+    min-height: auto;
     background-color: #fff;
     border-radius: 5px;
-    /* transition: all 0.3s ease-out;
-    transform: scaleY(0); */
+    padding: 15px 15px;
+}
+.chat-heading{
+    width: 100%;
+    min-height: 40px;
+    border-radius: 5px;
+    background: #7f8ac5;
+    padding: 18px 20px 18px 20px;
+}
+.chat-heading .para-one{
+  font-size: 18px;
+  color: #fff;
+}
+.chat-heading .para-two{
+    color: #fff;
+    font-size: 11px;
+    opacity: 0.8;
+    text-transform: capitalize;
+    margin-top: -12px;
+    margin-bottom: -3px;
+}
+.chat-middle{
+  padding: 15px 25px 15px 25px;
+}
+.chat-middle .para-one{
+  font-weight: bold;
+  font-size: 13px;
+}
+.chat-middle .para-two{
+  color: #3d2b1f;
+  margin-top: -12px;
+  font-size: 10px;
+}
+
+.green-button{
+  background-color: #13a884;
+  padding: 5px 10px;
+  border-radius: 15px;
+  color: #fff;
+  border: none;
+  font-size: 13px;
+  /* margin-bottom: 10px; */
+}
+.green-button i{
+  font-size: 19px;
+  position: relative;
+  float: right;
+  padding-left: 4px;
 }
 
 
-.bubble{
+/* scecond chat section */
+
+.second-chat-box{
+    display: none;
+    position: fixed;
+    right: 62px;
+    bottom: 100px;
+    width: 320px;
+    min-height: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px 15px;
+}
+
+/* user chat  */
+.user-chat{
+  display: inline-block; 
+  background-color: #4c5aa1;
+  border-radius: 5px;
+  width: 80%;
+  height: auto;
+  color: #fff;
+  padding: 10px  25px 0px 15px;
+  position: relative;
+  margin-top: 20px;  
+  margin-bottom: 10px;
+  margin-bottom: 20px;
+  float: right;
+}
+
+.user-chat.right:after {
+  content: " ";
+  position: absolute;
+  right: 0;
+  bottom: -15px;
+  border-top: 20px solid #4c5aa1;
+  border-right: 0px solid transparent;
+  border-left: 15px solid transparent;
+  border-bottom: none;
+}
+
+.user-chat p{
+  font-size: 12px;
+}
+
+/* server chat */
+.server-chat{
+  display: inline-block; 
+  background-color: #ecf1fb;
+  border-radius: 5px;
+  width: 80%;
+  height: auto;
+  padding: 10px  25px 0px 15px;
+  position: relative;
+  margin-bottom: 50px;
+  float: left;
+  margin-left: 39px;
+}
+.server-chat.left:after{
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  border-top: 20px solid #ecf1fb;
+  border-right: 15px solid transparent;
+  border-left: 0px solid transparent;
+  border-bottom: none;
+}
+.server-chat p{
+  font-size: 12px;
+}
+
+.round-shape{
+  height: 30px;
+  width: 30px;
+  background-color: #4c5aa1;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  top: 120px; 
+}
+
+/* survey sparrow log and text */
+
+.logo-section{
+  margin-top: 50px;
+}
+.sparrow-favicon p{
+  
+  font-size: 10px;
+  color: #3d2b1f;
+  
+}
+
+.input-field{
+  padding: 5px 20px 5px 20px;
+}
+
+.input-field input{
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+.input-field a i{
+  font-size: 25px;
+  color: #7f8ac5;
+  float: right;
+}
+
+/* chat-icon-section */
+.sparrow-icon-span{
+    width: 70px;
+    height: 70px;
+    border: none;
+    outline: none;
+    border-radius: 50px 50px 0 50px;
+    background: #fff;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    position: fixed;
+    bottom: 20px;
+    right: 60px;
+    cursor: pointer;
+    display: block;
     
-  background: #fff;
+    
+    
+}
+.sparrow-img{
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.cross-icon-span{
+  width: 55px;
+  height: 55px;
+  border: none;
+  outline: none;
   border-radius: 50px 50px 0 50px;
-  height: 60px;
-  width: 60px;
-  display: block;
-  line-height: 46px;
+  background: #fff;
+  position: fixed;
+  bottom: 30px;
+  right: 60px;
   cursor: pointer;
-  transition: transform 0.5s ease;
-  margin-bottom: 7px;
- 
+  display: none;
+  
 }
-.sparrow-bird{
-    width: 25px;
-    height: 25px;
-    
+.cross-icon-span i{
+   top: 5px;
+   left: 15px;
 }
 
-#click:checked ~ label i.fas{
-  opacity: 1;
-  pointer-events: auto;
+
+.cross-icon-span i{
+  position: relative;
+  top: 18px;
+  right: 5px;
 }
-#click:checked ~ label .sparrow-bird{
-  opacity: 1;
-  pointer-events: none;
-}
+
+
+
 
 
