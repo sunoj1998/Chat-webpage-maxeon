@@ -25,14 +25,17 @@
     <title>Hello, world!</title>
   </head>
   <body>
+
+    <!-- navbar section -->
+
     <section class="navbar-section position-absolute w-100 mt-5">
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
           <a class="navbar-brand logo text-white fs-4 fw-bold" href="#"
             >Maxeon</a
           >
           <button
-            class="navbar-toggler"
+            class="navbar-toggler "
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -40,7 +43,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon text-white"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 float-end">
@@ -66,6 +69,9 @@
         </div>
       </nav>
     </section>
+    <!-- end of navbar section -->
+
+    <!-- banner section -->
     <section
       class="banner-section d-flex justify-content-center align-items-center"
     >
@@ -77,18 +83,18 @@
             </p>
           </div>
         </div>   
-      </div>
-
-      
-      
+      </div>  
     </section>
+    <!-- end of banner section -->
+
+    <!-- chat section -->
     <section class="chat-section">
       <div class="first-chat-box" id="first-chat-box-id">
-        <div class="chat-heading" id="">
+        <div class="chat-heading" >
           <p class="para-one">Hi There</p>
           <p class="para-two">hello ask us anything.share your <br> feedback.</p>
         </div>
-        <div class="chat-middle" id="chat-middle-id">
+        <div class="chat-middle">
           <p class="para-one ">Start a Conversation</p>
           <p class="para-two">The team typically replies in a few minutes.</p>
           <button class="green-button" onclick="hitButton()">New Conversation <span class="send-icon"><i class="material-icons">send</i></span></button>
@@ -97,7 +103,7 @@
       </div>
 
       <div class="second-chat-box" id="second-chat-box-id">
-        <div class="chat-heading" id="">
+        <div class="chat-heading">
           <p class="para-one">Hi There</p>
           <p class="para-two">The team typically replies in a few minutes.</p>
         </div>
@@ -107,22 +113,23 @@
         
         <span class="round-shape"></span>
         <div class="server-chat left"> 
-          </span><p>Currently we don't have <br>but we will launch soon.</p>
+          </span><p id="server-id">Currently we don't have <br>but we will launch soon.</p>
         </div>
 
         <div class="logo-section">
           <span class="sparrow-favicon text-center">
-             <p><img src="./asset/sparrow favicon.png" alt="" style="width: 20px;">we run on surveysparrow</p> </span>
+             <p><img src="./asset/sparrow favicon.png" alt="" style="width: 20px;"> <span>we run on surveysparrow</span> </p> 
+            </span>
         </div>
         <hr>
         <div class="input-field">
           <input  type="text" placeholder="Write a reply...">
           <a  id="blue-button"><i class="material-icons">send</i></a>
       </div>
-      
-      
-
     </section>
+ 
+    
+    <!-- sparrow Icon --> 
     <span class="sparrow-icon-span" onclick="displayChatBox()" id="sparrow-icon-id">
       <img src="./asset/Sparrow Bird.png" class="sparrow-img"   alt="">
     </span>
@@ -130,16 +137,9 @@
     <span class="cross-icon-span" onclick="closeChatBox()" id="cross-icon-id">
       <i class="material-icons" >close</i></span>
     </span>
+    <!-- end of sparrow icon -->
       
 
-       
-           
-         
-
-      
-        
-       
-    
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -158,8 +158,6 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
-
-    <script src="https://kit.fontawesome.com/2807c7ca39.js" crossorigin="anonymous"></script>
 
     <script src="app.js"></script>
   </body>
